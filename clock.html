@@ -9,22 +9,10 @@
   <div id="pos"></div>
   <script type="text/javascript">
     
-    <button onclick="dateFunction011()">日付を表示</button>
-<p id="date011">ここに現在の「年月日」が表示されます。</p>
-
-function dateFunction011() {
-//日付オブジェクトを作成する
-var dd = new Date();
-//「年」を取得する
-var YYYY = dd.getFullYear();
-//「月」を取得する
-var MM = dd.getMonth()+1;
-//「日」を取得する
-var DD = dd.getDate();
-//段落タグ("date011")の中身を置き換える
-var pelem011 = document.getElementById("date011");
-pelem011.innerHTML = YYYY + "/" + MM + "/" + DD;
-}
+   //日付オブジェクトの作成
+var date001 = new Date();
+//日付変数(date001)をブラウザーに表示する
+document.writeln(date001);
     
     // 時刻取得関数
     function getTime() {
