@@ -9,10 +9,24 @@
   <div id="pos"></div>
   <script type="text/javascript">
     
- 　　//日付オブジェクトの作成
-　　　　var date001 = new Date();
-　　　//日付変数(date001)をブラウザーに表示する
-　　　　document.writeln(date001);
+ 　　<p>ボタンをクリックすると「日」が表示されます。</p>
+<button onclick="dateFunction8()">日付を表示</button>
+<p id="date008">ここに現在の「日」が表示されます。</p>
+<script>
+function dateFunction8() {
+//日付オブジェクトを作成する
+var date8 = new Date();
+//日付オブジェクトから「年」を取得する
+var year = date6.getFullYear();
+//日付オブジェクトから「月」を取得する
+var month = date7.getMonth()+1;
+//日付オブジェクトから「日」を取得する
+var day = date8.getDate();
+  
+//段落タグの中身を置き換える
+var pelem008 = document.getElementById("date008");
+pelem008.innerHTML = "今日は" + yeae + "年"＋month+"月"+day+"日”+"です！";
+}
     
     // 時刻取得関数
     function getTime() {
