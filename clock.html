@@ -8,7 +8,12 @@
 <body onload="strClock();">
   <div id="pos"></div>
   <script type="text/javascript">
- 
+    
+ 　　//日付オブジェクトの作成
+　　　　var date001 = new Date();
+　　　//日付変数(date001)をブラウザーに表示する
+　　　　document.writeln(date001);
+    
     // 時刻取得関数
     function getTime() {
       var now = new Date();
